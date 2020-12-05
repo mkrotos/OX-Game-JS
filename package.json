@@ -1,0 +1,22 @@
+{
+  "name": "ox",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "OX game",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npx mocha tests/*",
+    "start-server":"npx http-server ."
+  },
+  "author": "MK",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
