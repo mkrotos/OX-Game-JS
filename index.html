@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>OX Game</title>
@@ -9,8 +9,10 @@
 </head>
 
 <body>
-    <h1 id="title">OX Game</h1>
-    <div id="board">
+    <header>
+        <h1 id="title">OX Game</h1>
+    </header>
+    <main id="board">
         <table id="board-table">
             <tr>
                 <td><button onclick="onFieldClick(this)"> </button></td>
@@ -28,11 +30,13 @@
                 <td><button onclick="onFieldClick(this)"> </button></td>
             </tr>
         </table>
-        <div id="turn-div">
-            Turn of player: <span id="player-turn">O</span>
-        </div>
-        <div id="reset-div"><button onclick="reset()">Reset</button></div>
-    </div>
+        <footer>
+            <div id="turn-div">
+                Turn of player: <span id="player-turn">O</span>
+            </div>
+            <div id="reset-div"><button onclick="reset()">Reset</button></div>
+        </footer>
+    </main>
 </body>
 
 </html>

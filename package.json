@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "npx mocha tests/*",
-    "start-server":"npx http-server ."
+    "start":"npx http-server ."
   },
   "author": "MK",
   "license": "ISC",

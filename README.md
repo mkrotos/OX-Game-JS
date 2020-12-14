@@ -4,7 +4,7 @@
 1. Install dependencies using command: <br>
     `npm i`
 2. Start http server: <br> 
-    `npm run start-server`
+    `npm start`
 3. Open browser on adress: <br>
    `http://127.0.0.1:8080`
 
