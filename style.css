@@ -14,7 +14,12 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+
 /* BOARD-TABLE */
+#board{
+    height: auto;
+}
+
 #board-table{
     border: 2px solid black;
     margin-left: auto;
@@ -26,7 +31,7 @@ body{
     margin: 0;
 }
 
-#board-table tr td button{
+.button{
     height: 70px;
     width: 70px;
     background-color: burlywood;
@@ -34,7 +39,7 @@ body{
     font-size: 20px;
 }
 
-#board-table tr td button:hover{
+.button:hover{
     background-color: coral;
 }
 
@@ -53,6 +58,7 @@ body{
 /* RESET BUTTON */
 #reset-div{
     margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -60,4 +66,30 @@ body{
     padding: 5px 20px;
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
+}
+
+#settings{
+    width: 210px;
+    height: auto;
+    padding: 20px ;
+    padding-top: 10px;
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: #6c9976;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+#settings p{
+    margin-top: 10px;
+}
+
+#settings input{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    width: 50px;
+    height: 30px;
+    text-align: center;
 }

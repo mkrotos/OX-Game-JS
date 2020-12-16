@@ -12,29 +12,29 @@
     <header>
         <h1 id="title">OX Game</h1>
     </header>
-    <main id="board">
-        <table id="board-table">
-            <tr>
-                <td><button onclick="onFieldClick(this)"> </button></td>
-                <td><button onclick="onFieldClick(this)"> </button></td>
-                <td><button onclick="onFieldClick(this)"> </button></td>
-            </tr>
-            <tr>
-                <td><button onclick="onFieldClick(this)"> </button></td>
-                <td><button onclick="onFieldClick(this)"> </button></td>
-                <td><button onclick="onFieldClick(this)"> </button></td>
-            </tr>
-            <tr>
-                <td><button onclick="onFieldClick(this)"> </button></td>
-                <td><button onclick="onFieldClick(this)"> </button></td>
-                <td><button onclick="onFieldClick(this)"> </button></td>
-            </tr>
-        </table>
+    <main>
+        <div id="board"></div>
         <footer>
             <div id="turn-div">
                 Turn of player: <span id="player-turn">O</span>
             </div>
-            <div id="reset-div"><button onclick="reset()">Reset</button></div>
+            <div>
+                <div id="reset-div"><button onclick="reset()">Generate new</button></div>
+                <form id="settings">
+                    <p>
+                        <label for="height">Height</label><br>
+                        <input type="number" id="height" value="3" min="2" max="20"><br>
+                    </p>
+                    <p>
+                        <label for="width">Width</label><br>
+                        <input type="number" id="width" value="3" min="2" max="20"><br>
+                    </p>
+                    <p>
+                        <label for="win-seq">Win sequence</label><br>
+                        <input type="number" id="win-seq" value="3" min="2" max="20"><br>
+                    </p>
+                </form>
+            </div>
         </footer>
     </main>
 </body>
